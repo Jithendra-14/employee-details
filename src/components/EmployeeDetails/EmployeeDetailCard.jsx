@@ -5,7 +5,7 @@ const EmployeeDetailCard = () => {
 	const [empData, setEmpData] = useState(getEmployeeData());
 	useEffect(() => {
 		const handleStorage = () => {
-			setEmpData(JSON.parse(localStorage.getItem("employee")));
+			setEmpData(getEmployeeData());
 		};
 		window.addEventListener("storage", handleStorage);
 		return () => {
