@@ -15,10 +15,10 @@ const EmployeeDetailCard = () => {
 	return (
 		<div className="card">
 			<h3>
-				<em className="underline">Name</em>&nbsp; :&nbsp;{empData.name}
+				<em className="underline">Name</em>&nbsp; :&nbsp;{empData?.name}
 			</h3>
 			<span>
-				<em className="underline">Email</em>&nbsp; :&nbsp;{empData.email}
+				<em className="underline">Email</em>&nbsp; :&nbsp;{empData?.email}
 			</span>
 		</div>
 	);
